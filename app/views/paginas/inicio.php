@@ -6,7 +6,9 @@
     <title>siltot</title>
 </head>
 <body>
+    <?php require RUTA_APP .'/views/inc/header.php'; ?>
     <p> <?php  echo $datos['titulo']; ?> </p>
     <!-- <p><?php echo RUTA_APP; ?></p> -->
+    <?php require RUTA_APP .'/views/inc/footer.php'; ?>
 </body>
 </html>
