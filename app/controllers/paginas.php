@@ -1,6 +1,7 @@
 <?php
 
 class Paginas extends controller{
+
     public function __construct(){
         // echo 'controlador paginas cargando';
 
@@ -10,12 +11,6 @@ class Paginas extends controller{
         $datos = ['titulo' => 'Bienvenidos a Silto'];
         $this->view('paginas/inicio', $datos);
 
-
-    }
-
-    public function articulo($num){
-
-        echo $num;
 
     }
 
