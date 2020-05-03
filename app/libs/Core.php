@@ -1,23 +1,23 @@
 <?php
     class Core{
-        protected $controllerActual = 'paginas';
+        protected $controllerActual = 'Paginas';
         protected $metodoActual = 'index';
         protected $parametros = [];
 
         public function __construct(){
-            //print_r($this->getUr());
+            //print_r($this->getUrl());
             $url = $this->getUrl();
-            //buscar en controlador si es controlador existe
-            if (file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
-                //si existe se setea  como controlador por defecto
-                $this->controllerActual = ucwords($url[0]);
-
+            //buscar en los controladores si el controlador existe
+            if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+                //si existe se configura por controlador por defecto
+               $this->controllerActual = ucwords($url[0]);
                 //unset indice
                 unset($url[0]);
             }
             //requerir el controlador
-            require_once '../app/controllers/' .$this->controllerActual .'.php';
+           require_once '../app/controllers/' .$this->controllerActual . '.php';
             $this->controllerActual = new $this->controllerActual;
+            
             //chequear la segunda parte de la url que seria el metodo
             if (isset($url[1])){
                 if (method_exists($this->controllerActual, $url[1])){

@@ -3,7 +3,7 @@
 class Paginas extends controller{
 
     public function __construct(){
-        // echo 'controlador paginas cargando';
+        //echo 'controlador paginas cargando';
 
     }
 

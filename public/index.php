@@ -3,5 +3,5 @@
 require_once '../app/index.php';
 
 // inicializamos la clase del controlador
- $iniciar = new Core();
+ $iniciar = new Core;
 ?>
