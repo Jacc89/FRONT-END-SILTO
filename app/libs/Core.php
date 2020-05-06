@@ -1,6 +1,6 @@
 <?php
     class Core{
-        protected $controllerActual = 'Paginas';
+        protected $controllerActual = 'paginas';
         protected $metodoActual = 'index';
         protected $parametros = [];
 
