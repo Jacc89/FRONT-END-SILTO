@@ -3,13 +3,21 @@
 class Paginas extends controller{
 
     public function __construct(){
-        //echo 'controlador paginas cargando';
+        // $this->articuloModel =$this->model('Articulo');
+        // //echo 'controlador paginas cargando';
 
     }
 
     public function index(){
-        $datos = ['titulo' => 'Bienvenidos a Silto'];
-        $this->view('paginas/inicio', $datos);
+        // $articulos = $this->articuloModel->obtenerArticulos();
+
+
+        $datos = [
+            'titulo' => 'Bienvenidos a Silto'
+            // 'articulos' => $articulos
+        ];
+
+         $this->view('paginas/inicio', $datos);
 
 
     }
