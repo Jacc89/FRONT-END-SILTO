@@ -36,7 +36,7 @@
         //vinculacion de la consulta con bind
         public function bind($parametro, $valor, $tipo =null){
             if (is_null($tipo)) {
-                switch ($variable) {
+                switch (true) {
                     case is_int($valor):
                         $tipo = PDO::PARAM_INT;
                     break;

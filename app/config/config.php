@@ -11,7 +11,7 @@ define('DB_NOMBRE', 'crud');//nombre  Base de datos
 define('RUTA_APP', dirname(dirname(__FILE__)));
 
 //Ruta url ejemplo  http://localhost/FROND-END-SILTO/
-define('RUTA_URL','http://localhost/FROND-END-SILTO/');  //aqui ruta 
+define('RUTA_URL','http://localhost/FROND-END-SILTO');  //aqui ruta 
 
 define('NOMBRESITIO', 'CRUD');
 ?>
